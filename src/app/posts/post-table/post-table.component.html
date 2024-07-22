@@ -1,0 +1,8 @@
+<ul *ngFor="let post of allPosts; trackBy: trackPostById">
+  <li>
+    <h1>{{post.title}}</h1>
+    <h2>{{post.type}}</h2>
+    <p>{{post.body}}</p>
+    <img [src]="post.imgSrc" [alt]="post.title" />
+  </li>
+</ul>

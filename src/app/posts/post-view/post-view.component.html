@@ -1,0 +1,8 @@
+<div>
+  <ng-container *ngIf="allPosts.length > 0; else noPost">
+    <app-post-table [allPosts]="allPosts"/>
+  </ng-container>
+  <ng-template #noPost>
+    <h1>No Post</h1>
+  </ng-template>
+</div>
